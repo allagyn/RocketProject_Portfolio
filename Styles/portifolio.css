@@ -78,6 +78,14 @@ body {
     color: currentColor;
 
 }
+.box__link img {
+    max-width: 20px;
+    max-height: 20px;
+}
+.box__link_list p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
 
 /*Caixa Tecnologias*/
 .box__technologies {
@@ -87,6 +95,42 @@ body {
     margin-top: 1.5rem; 
     
 }
+.box__technologies_stacks {
+    padding: 30px 20px;
+   
+   
+}
+.box__technologies_stacks h2 {
+    margin-bottom: 26px;
+    font-size: 1.25rem;
+}
+.box__technologies_tools {
+    display: grid;
+    grid-template-areas: 
+        "g1 g1 g1"
+        "g2 g2 g2"
+        "g3 g3 g3"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    
+    gap: 15px;
+         
+}
+
+.box__technologies_tools p {
+    font-size: 0.625rem;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+.background_techs {
+    background-color: var(--bg-techs);
+    border-radius: 30px;
+    padding: 8px 18.57px;
+    
+}
+
 /*Exepriências*/
 .box__experiences {
    
