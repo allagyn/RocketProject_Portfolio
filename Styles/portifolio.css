@@ -8,10 +8,10 @@ body {
     display: flex;
     justify-content:center;
     box-sizing: border-box;
-   
-    
+    flex-wrap: wrap;
+  
 }
-/*1º Caixa Principal*/
+/*1º Caixa Principal Assing*/
 .box {
     
     margin: 2.5rem auto 1.5rem;
@@ -63,27 +63,22 @@ body {
     display: flex;
     
 }
-.box__link_icons {
+.box__link_list {
+    padding: 30px 40px;
+ 
     display: flex;
-    
-    justify-content: space-evenly;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+.box__link_list--icons {
+    display: flex;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 20px;
-    width: 1.5rem;
-    
+    gap: 20px; /*Espacamento */
+    text-decoration: none;
+    color: currentColor;
+
 }
-.box__link_text {
-    display: flex;
-    font-size: 0.8rem;
-    font-weight: 400;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin-top: -3.7px;
-    margin-bottom: -2.7px;
-    
-}
+
 /*Caixa Tecnologias*/
 .box__technologies {
    
@@ -108,7 +103,7 @@ body {
     margin-top: 1.5rem; 
 }
 
-/*Segunda Caixa Principal*/
+/*Segunda Caixa Principal Sessão*/
 .container2 {
     margin: 2.5rem auto 1.5rem;
    
