@@ -1,13 +1,15 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: var(--body-bg-color);
     height: 100vh;
-    
+   
 }
 .container {
     
     display: flex;
     justify-content:center;
-    box-sizing: border-box;
     flex-wrap: wrap;
   
 }
@@ -137,7 +139,36 @@ body {
     width: 21.75rem;
     height: 21.813rem;
     margin-top: 1.5rem; 
+        
+}
+.box__experiences_skill {
+        padding: 30px 20px;
+       
+}
+.box__experiences h2 {
+    margin-bottom: 26px;
+    font-size: 1.25rem;
+}
+.box__experiences--list {
+    display: grid;
+    gap: 18px;
+    font-size: 0.875rem;
+    font-weight: 700;
     
+    list-style:disc;
+    margin: 22px 40px 30px 40px;
+}
+.box__experiences--list li {
+    line-height: 15px;
+}
+.box__experiences--list p {
+    font-size: 0.75rem;
+    font-weight: 300;
+    
+}
+.box__experiences--list h4 {
+    font-size: 0.75rem;
+    font-weight: 400;
 }
 /*Caixa Educação*/
 .box__education {
@@ -146,7 +177,7 @@ body {
     height: 22rem;
     margin-top: 1.5rem; 
 }
-
+/*Reproveitamento de Código da Box Experiências*/
 /*Segunda Caixa Principal Sessão*/
 .container2 {
     margin: 2.5rem auto 1.5rem;
@@ -158,21 +189,58 @@ body {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
     width: 59.5rem;
     height: 5.375rem;
     margin-bottom: 1.5rem;
+}
+.container2__myproject h2 {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+.container2__myproject_link {
+    text-decoration: none;
+}
+.container2__myproject p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--text-color);
+    
+    
 }
 .container2__box {
     display: flex;
     justify-content:space-between;
     
 }
+/*Caixa Projetos*/
+
 .container2__project1 {
     background-color: var(--bg-cards);
     width: 26rem;
     height: 11.625rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+}
+.container2__project1_folder  {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 30px;
+    color: var(--text-color);
+}
+/* .container2_folder {
+    width: 20px;
+    height: 20px;
+     
+} */
+.container2__project1_folder p {
+    font-size: 1rem;
 }
 .container2__project2 {
     background-color: var(--bg-cards);
@@ -186,10 +254,20 @@ body {
     background-color: var(--bg-cards);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
     
     width: 59.5rem;
     height: 5.375rem;  
     margin-top: 1.5rem; 
+}
+.container2__recent_post h2 {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    font-weight: 700;
 }
 .container2__post {
     background-color: var(--bg-cards);
