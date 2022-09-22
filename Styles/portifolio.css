@@ -299,33 +299,50 @@ body {
     background-color: var(--bg-cards);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    
-    height: 5.375rem;  
+    padding: 30px 0px 42px 30px;
+    width: 59.5rem;
     height: 12.563rem;
     margin-top: 1.5rem;
 }
 .container2__post_box {
     display: flex;
-    gap: 78px;
+    gap: 20px;
+  
     
-    align-items: center;
 
 }
 .container2__post_profile--img {
-  padding: 31px 20px 42px 30px;
+  
   width: 128px;
   height: 128px;
+ 
+  
 }
 .container2__post_profile--boxtext1 {
     display: flex;
-    color: var(--text-color);
-    font-size: 1.125rem;
+    /* align-items: stretch; */
+    justify-content: space-between;
+   
     line-height: 22.63px;
     flex-direction: column;
-    margin: 30px auto 28px 0;
+    color: var(--text-color);
 }
-.container2__post_p2 {
+.container2__post_profile--boxtext1 h2 {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+.container2__post_profile--boxtext1 h3 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+.container2__post_p1 {
     font-size: 0.875rem;
     font-weight: 400;
+    margin-top: 11px;
    
+}
+.container2__post_profile_list {
+    display: flex;
+    gap: 23px;
+    font-size: 0.875rem;
 }
