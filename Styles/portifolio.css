@@ -391,23 +391,30 @@ body {
     .container2__box {
        flex-direction: column;
        gap: 8px;
+       
+       align-items: center;
     }
     .container2__box > div {
         max-width: 21.75rem;
-        
+        width: 90%;
     }
     .container2__post {
-       
+        
         height: auto;
+        width: 100%;
         
     }
     .container2__post_box {
         flex-direction: column;
         align-items: center;
+        width: 90%;
+        
         
     }
     .container2__post_profile--boxtext1 {
         align-items: center;
+        display: grid;
+        gap: 20px;
     }
     .container2__post_profile_list {
         
