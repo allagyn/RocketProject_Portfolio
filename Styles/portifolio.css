@@ -16,22 +16,26 @@ body {
 /*1º Caixa Principal Assing*/
 .box {
     
-    margin: 2.5rem auto 1.5rem;
+    margin: 2.5rem auto 1.5rem auto; 
 }
 .box > div {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     background-color: var(--bg-cards);
     color: var(--text-color);
+   
+    max-width: 21.75rem;
+    width: 100%;
 }
 /*Caixa Perfil*/
 .box__profile {
     
     justify-content:space-evenly;
     align-items: center;
-    
-    width: 21.75rem;
+   
+   
     height: 18.25rem;
+  
     display: flex;
     flex-direction: column;
 }
@@ -59,7 +63,7 @@ body {
 }
 /*Caixa LINK*/
 .box__link {
-    width: 21.75rem;
+    
     height: 21.75rem;
     margin-top: 1.5rem ; 
     display: flex;
@@ -92,7 +96,7 @@ body {
 /*Caixa Tecnologias*/
 .box__technologies {
    
-    width: 21.75rem;
+    
     height: 13rem;
     margin-top: 1.5rem; 
     
@@ -136,7 +140,7 @@ body {
 /*Exepriências*/
 .box__experiences {
    
-    width: 21.75rem;
+    
     height: 21.813rem;
     margin-top: 1.5rem; 
         
@@ -173,15 +177,20 @@ body {
 /*Caixa Educação*/
 .box__education {
    
-    width: 21.75rem;
+    
     height: 22rem;
     margin-top: 1.5rem; 
 }
 /*Reproveitamento de Código da Box Experiências*/
 /*Segunda Caixa Principal Sessão*/
+
 .container2 {
-    margin: 2.5rem auto 1.5rem;
+    margin: 2.5rem auto 1.5rem auto;
    
+}
+.container2 > div {
+    max-width:  59.5rem;
+    
 }
 
 .container2__myproject {
@@ -193,8 +202,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-
-    width: 59.5rem;
+    
+   
     height: 5.375rem;
     margin-bottom: 1.5rem;
 }
@@ -213,6 +222,7 @@ body {
     
     
 }
+/*Caixa do ONIX project*/
 .container2__box {
     display: flex;
     justify-content:space-between;
@@ -258,9 +268,7 @@ body {
     gap: 16px;
     /* margin: 20px auto 30px 30px; */
 }
-/* .container2__project_grup2 {
-    display: flex;
-} */
+
 .projetct1__grup1 {
     display: flex;
     align-items: center;
@@ -285,8 +293,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+ 
     
-    width: 59.5rem;
     height: 5.375rem;  
     margin-top: 1.5rem; 
 }
@@ -303,13 +311,13 @@ body {
     width: 59.5rem;
     height: 12.563rem;
     margin-top: 1.5rem;
+    
+    
 }
 .container2__post_box {
     display: flex;
     gap: 20px;
   
-    
-
 }
 .container2__post_profile--img {
   
@@ -320,7 +328,7 @@ body {
 }
 .container2__post_profile--boxtext1 {
     display: flex;
-    /* align-items: stretch; */
+    
     justify-content: space-between;
    
     line-height: 22.63px;
@@ -329,7 +337,9 @@ body {
 }
 .container2__post_profile--boxtext1 h2 {
     font-weight: 700;
-    font-size: 1.125rem;
+    /* font-size: 1.125rem; */
+    font-size: clamp(0.5rem, 1rem, 1.125rem);
+
 }
 .container2__post_profile--boxtext1 h3 {
     font-weight: 400;
@@ -346,6 +356,7 @@ body {
     gap: 23px;
     font-size: 0.875rem;
 }
+
 /*Footer*/
 .footer {
     display: flex;
@@ -357,4 +368,52 @@ body {
     font-size: 0.875rem;
     font-weight: 400;
     color: var(--text-color);
+}
+
+/*Responsive*/
+@media screen and (max-width: 600px) {
+    .container {
+       
+       flex-direction: column;
+       
+    }
+    .box  {
+        width: 90%;
+    }
+    .container2 {
+        width: 90%;
+    }
+    .container2 > div {
+        
+        max-width: 21.75rem;
+       
+    }
+    .container2__box {
+       flex-direction: column;
+       gap: 8px;
+    }
+    .container2__box > div {
+        max-width: 21.75rem;
+        
+    }
+    .container2__post {
+       
+        height: auto;
+        
+    }
+    .container2__post_box {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .container2__post_profile--boxtext1 {
+        align-items: center;
+    }
+    .container2__post_profile_list {
+        
+        width: 50%;
+        display: grid;
+        gap: 0px;
+        
+    }
 }
