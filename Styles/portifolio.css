@@ -13,6 +13,10 @@ body {
     flex-wrap: wrap;
   
 }
+a {
+    text-decoration: none;
+    color: currentColor;
+}
 /*1º Caixa Principal Assing*/
 .box {
     
@@ -373,19 +377,27 @@ body {
 /*Responsive*/
 @media screen and (max-width: 700px) {
     .container {
-       
+     
        flex-direction: column;
-       
+      
     }
     .box  {
         width: 90%;
+       
+        margin: 0 auto;
+        
+    }
+    .box > div {
+        margin: 20px auto;
     }
     .container2 {
         width: 90%;
-        margin-top: auto;
+        display: grid;
+        justify-content: center;
+        
     }
     .container2 > div {
-        
+       
         max-width: 21.75rem;
        
     }
@@ -397,7 +409,9 @@ body {
     }
     .container2__box > div {
         max-width: 21.75rem;
-        width: 90%;
+        width: 100%;
+        
+       
     }
     .container2__post {
         
