@@ -9,7 +9,7 @@ Construção de um Portfolio - HTM e CSS
 
 - *Tornando o design responsivo*
 - *Consumir a API do Github*
-![image](https://user-images.githubusercontent.com/105944368/190716982-bdf53c09-8574-47ec-8e94-7d93018b3f5f.png)
+![screenshot-allagyn github io-2022 10 26-09_38_49](https://user-images.githubusercontent.com/105944368/198028396-73666678-5fd1-4e21-a1d3-465f52733d58.png)
 
 Deploy
 https://allagyn.github.io/RocketProject_Portfolio/
